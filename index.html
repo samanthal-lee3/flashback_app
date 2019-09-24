@@ -12,7 +12,12 @@
       
     <div id = "app"> </div>
       <script type = 'text/babel'>
-        ReactDOM.render(<h1> Hello World! </h1>, document.getElementById('app'));
+        var App = function() {
+          return (
+          <h1> Hello World! </h1>
+          );
+      };
+        ReactDOM.render(App(), document.getElementById('app'));
       </script>
     </body>
   </html>
